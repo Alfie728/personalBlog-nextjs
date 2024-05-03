@@ -21,6 +21,7 @@
   font-weight: 500;
   font-size: 1.125rem;
   color: var(--color-decorative-900);
+  transition: color 700ms;
 }
 .wrapper p {
   font-size: 1.125rem;

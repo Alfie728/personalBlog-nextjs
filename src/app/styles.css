@@ -16,7 +16,7 @@ html {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  transition: color 350ms, background 350ms;
+  transition: color 350ms;
 }
 img,
 picture,
@@ -110,8 +110,9 @@ body::before {
   height: 100%;
   background: linear-gradient(
     to top,
-    var(--color-backdrop),
-    var(--color-backdrop-highlight)
+    var(--color-backdrop) 0%,
+    var(--color-backdrop) 50%,
+    var(--color-backdrop-highlight) 100%
   );
   transition: --color-backdrop 350ms linear,
     --color-backdrop-highlight 350ms linear;
